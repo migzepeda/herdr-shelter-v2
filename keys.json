@@ -1,0 +1,47 @@
+{
+  "layout:shelter_v2": {
+    "ctrl-shift-i": "layout.toggle:inspector",
+    "alt-shift-1": {
+      "command": "layout.select",
+      "args": {
+        "stack": "deck",
+        "child": "terminal"
+      }
+    },
+    "alt-shift-2": {
+      "command": "layout.select",
+      "args": {
+        "stack": "deck",
+        "child": "board"
+      }
+    },
+    "alt-shift-3": {
+      "command": "layout.select",
+      "args": {
+        "stack": "deck",
+        "child": "spaces"
+      }
+    },
+    "alt-shift-4": {
+      "command": "layout.select",
+      "args": {
+        "stack": "deck",
+        "child": "machines"
+      }
+    },
+    "alt-shift-5": {
+      "command": "layout.select",
+      "args": {
+        "stack": "deck",
+        "child": "activity"
+      }
+    },
+    "alt-shift-6": {
+      "command": "layout.select",
+      "args": {
+        "stack": "deck",
+        "child": "system"
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "place": "none",
+  "title": "Shelter",
+  "cloned_from": {
+    "name": "wasteland",
+    "version": "0.1.15"
+  }
+}

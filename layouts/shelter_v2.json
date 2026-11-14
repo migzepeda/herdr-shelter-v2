@@ -1,0 +1,218 @@
+{
+  "id": "root",
+  "type": "column",
+  "titlebar": "none",
+  "traffic_lights": [
+    14,
+    18
+  ],
+  "theme": "wasteland_v2",
+  "font": "IBM Plex Mono",
+  "font_size": 14,
+  "ui_font": "Share Tech Mono",
+  "terminal_padding": [
+    10,
+    8
+  ],
+  "terminal_opacity": 1,
+  "background": "canvas",
+  "resizable": false,
+  "preview": "layouts/shelter_v2.svg",
+  "children": [
+    {
+      "id": "header",
+      "type": "block",
+      "size": {
+        "px": 76
+      },
+      "window_drag": true,
+      "content": {
+        "mod": "shelter_v2",
+        "props": {
+          "view": "header"
+        }
+      }
+    },
+    {
+      "id": "body",
+      "type": "row",
+      "divider": {
+        "width": 1,
+        "color": "border"
+      },
+      "children": [
+        {
+          "id": "sidebar",
+          "type": "column",
+          "size": {
+            "px": 290
+          },
+          "min": 44,
+          "max": 380,
+          "children": [
+            {
+              "id": "nav",
+              "type": "block",
+              "content": {
+                "mod": "shelter_v2",
+                "props": {
+                  "view": "nav"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "deck",
+          "type": "stack",
+          "active": "terminal",
+          "children": [
+            {
+              "id": "terminal",
+              "type": "column",
+              "resizable": false,
+              "children": [
+                {
+                  "id": "tabs",
+                  "type": "block",
+                  "size": {
+                    "px": 46
+                  },
+                  "content": {
+                    "mod": "shelter_v2",
+                    "props": {
+                      "view": "tabs"
+                    }
+                  }
+                },
+                {
+                  "id": "main-wrap",
+                  "type": "row",
+                  "padding": 10,
+                  "children": [
+                    {
+                      "id": "main",
+                      "type": "block",
+                      "content": {
+                        "tab": "active",
+                        "pane": {
+                          "gap": 10,
+                          "radius": 6,
+                          "background": "background",
+                          "border": {
+                            "width": 1,
+                            "color": "input"
+                          },
+                          "focus": {
+                            "width": 2,
+                            "color": "accent"
+                          },
+                          "header": {
+                            "content": {
+                              "mod": "shelter_v2",
+                              "props": {
+                                "view": "pane"
+                              }
+                            },
+                            "height": 40,
+                            "position": "top",
+                            "reveal": "always"
+                          },
+                          "lone": true
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "board",
+              "type": "block",
+              "content": {
+                "mod": "shelter_v2",
+                "props": {
+                  "view": "board"
+                }
+              }
+            },
+            {
+              "id": "spaces",
+              "type": "block",
+              "content": {
+                "mod": "shelter_v2",
+                "props": {
+                  "view": "spaces"
+                }
+              }
+            },
+            {
+              "id": "machines",
+              "type": "block",
+              "content": {
+                "mod": "shelter_v2",
+                "props": {
+                  "view": "machines"
+                }
+              }
+            },
+            {
+              "id": "activity",
+              "type": "block",
+              "content": {
+                "mod": "shelter_v2",
+                "props": {
+                  "view": "activity"
+                }
+              }
+            },
+            {
+              "id": "system",
+              "type": "block",
+              "content": {
+                "mod": "shelter_v2",
+                "props": {
+                  "view": "system"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "inspector",
+          "type": "column",
+          "size": {
+            "px": 400
+          },
+          "min": 300,
+          "max": 560,
+          "children": [
+            {
+              "id": "inspector-body",
+              "type": "block",
+              "content": {
+                "mod": "shelter_v2",
+                "props": {
+                  "view": "inspector"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "status",
+      "type": "block",
+      "size": {
+        "px": 44
+      },
+      "content": {
+        "mod": "shelter_v2",
+        "props": {
+          "view": "status"
+        }
+      }
+    }
+  ]
+}
