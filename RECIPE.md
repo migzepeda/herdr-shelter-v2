@@ -32,14 +32,14 @@ Unofficial, made for personal use. Tested on Windows only. AI Assisted.
 - **Type:** terminals IBM Plex Mono 14 px; interface Share Tech Mono; headline mark
   VT323. All three are bundled in `mods/shelter_v2/fonts/` with their OFL licences.
 - **Colors:** three dark themes, picked in Herdr's Settings > Look > Theme (the Dark list);
-  the layout starts on Sage. All three change colors only.
-  - Sage (`themes/shelter_v2_sage.json`, default): canvas `#0b100e`, background `#0f1512`,
+  the layout starts on Green. All three change colors only.
+  - Sage (`themes/shelter_v2_sage.json`): canvas `#0b100e`, background `#0f1512`,
     panel `#151e19`, border `#34463b`, text `#b8c9b4` (about 10.6:1), accent `#8fbf86`,
     waiting amber `#d4b05a`, error red `#d97a68`, idle `#8a9a86`.
   - Amber (`themes/shelter_v2_amber.json`): canvas `#0f0c08`, background `#14100b`,
     panel `#1d1712`, border `#4a3b2b`, text `#d9b98a` (about 10.2:1), accent `#e0a458`,
     waiting `#ecc27a`, error red `#d9806a`, idle `#9a8a72`.
-  - Green (`themes/shelter_v2.json`, the original phosphor look): canvas `#010a02`,
+  - Green (`themes/shelter_v2.json`, default, the original phosphor look): canvas `#010a02`,
     background `#020e03`, panel `#051a08`, borders `#2e7a30` and `#50a040`, text `#9cf58a`,
     accent `#8cff6e`, waiting amber `#f0c040`, error red `#f06050`, idle `#7c9a78`.
   The error red is set in `look.js` (`APPEARANCES`), which finds the active theme by its
@@ -70,7 +70,7 @@ Unofficial, made for personal use. Tested on Windows only. AI Assisted.
 ## Built from
 
 - `layouts/shelter_v2.json`: root column (header 76, `body` row, status 44;
-  `titlebar: none`; `theme: { light: shelter_v2_sage, dark: shelter_v2_sage }`; `preview: layouts/shelter_v2.svg`). The body
+  `titlebar: none`; `theme: { light: shelter_v2, dark: shelter_v2 }`; `preview: layouts/shelter_v2.svg`). The body
   row holds `sidebar` (290), the `deck` stack (`terminal`, `board`, `spaces`,
   `machines`, `activity`, `system`) and `inspector` (400).
 - One mod, `mods/shelter_v2/`, in which `props.view` picks the screen: `header`, `nav`,
@@ -95,7 +95,7 @@ Unofficial, made for personal use. Tested on Windows only. AI Assisted.
   browser. It makes no network requests itself and reads no files outside its folder.
 - `keys.json` is a section to merge, not a file to copy over yours: Herdr keeps an
   edited `keys.json` as yours. Add the `layout:shelter_v2` section by hand.
-- Install all three themes: the layout names `shelter_v2_sage`, and the other two are what
+- Install all three themes: the layout names `shelter_v2`, and the other two are what
   Settings > Look > Theme offers. If you already have themes with these names, rename them
   and the layout's `theme` field together. All three are dark; none is a light theme.
 - This is a fork of a Wasteland layout, so some leftovers remain: the class in
