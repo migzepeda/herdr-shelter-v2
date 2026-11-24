@@ -5,7 +5,7 @@
 import { div } from "gpui-kit";
 import { h_flex, v_flex } from "gpui-base";
 import { run, exec, updates, settings, window, keys, layout, shared, setShared, nextCommand } from "herdr";
-import { S, R, F, pal, prefs, icon, chip, screen, section, card, empty, button, field as baseField } from "./look.js";
+import { S, R, F, appearance, pal, prefs, icon, chip, screen, section, card, empty, button, field as baseField } from "./look.js";
 import { machineState, machineRows, counts, systemState, find, inspectorShown, go, machineLabel } from "./model.js";
 import { events, clearEvents } from "./activity.js";
 
@@ -125,7 +125,7 @@ export const system = {
           .child(field("Interface", "Share Tech Mono"))
           .child(field("Terminal", `${set.font ?? "IBM Plex Mono"} · ${set.font_size ?? 14}px`))
           .child(field("Zoom", `${Math.round((set.zoom ?? 1) * 100)}%`))
-          .child(field("Theme", String(set.theme ?? "wasteland_v2")))
+          .child(field("Theme", appearance().label))
           .child(h_flex().gap(S.sm).pt(S.xs).flex_wrap()
             .child(button("sa-zo", "Zoom −", () => run("app.zoom_out")))
             .child(button("sa-zr", "Reset", () => run("app.zoom_reset")))

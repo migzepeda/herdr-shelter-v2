@@ -5,17 +5,36 @@
 
 import { div, svg, image } from "gpui-kit";
 import { h_flex, v_flex, Input } from "gpui-base";
-import { theme, shared } from "herdr";
+import { theme, themes, shared } from "herdr";
 
 export const S = { xs: 4, sm: 8, md: 12, lg: 16, xl: 24, xxl: 32 };
 export const R = { sm: 3, ctl: 4, card: 5, major: 6 };
 export const F = { ui: "Share Tech Mono", data: "IBM Plex Mono", mark: "VT323" };
-const ERROR = "#f06050";
+
+// Appearances. All are dark themes, so they sit together under Dark; each is a theme file in
+// themes/. Picked in Herdr Settings > Look > Theme (this mod has no picker of its own). `error` is the one red this mod
+// hardcodes, softened to suit each palette. First entry is the fallback.
+export const APPEARANCES = [
+  { id: "shelter_v2", label: "Green", error: "#f06050", note: "The original phosphor green. Brightest and most saturated." },
+  { id: "shelter_v2_sage", label: "Sage", error: "#d97a68", note: "Desaturated green, text about 10:1. Calmest for long sessions." },
+  { id: "shelter_v2_amber", label: "Amber", error: "#d9806a", note: "Warm amber, text about 10:1. Gentlest on night vision." },
+];
+
+// The appearance on screen, found by its accent color (so Herdr's own theme picker is followed too).
+let memo = { accent: null, hit: APPEARANCES[0] };
+export function appearance() {
+  const accent = String(theme().accent ?? "").toLowerCase();
+  if (memo.accent === accent) return memo.hit; // pal() runs many times per render; themes() only when the accent changes
+  const all = themes();
+  const hit = APPEARANCES.find((a) => String(all.find((x) => x.name === a.id)?.colors?.accent ?? "").toLowerCase() === accent) ?? APPEARANCES[0];
+  memo = { accent, hit };
+  return hit;
+}
 
 // Theme colors plus the semantic tones (success / active / warning / error / neutral / info).
 export function pal() {
   const t = theme();
-  return { ...t, success: t.done, active: t.accent, warning: t.blocked, error: ERROR, neutral: t.idle, info: t.muted };
+  return { ...t, success: t.done, active: t.accent, warning: t.blocked, error: appearance().error, neutral: t.idle, info: t.muted };
 }
 
 // Person's look choices (System > Appearance). Missing = on.

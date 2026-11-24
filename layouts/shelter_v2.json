@@ -6,7 +6,7 @@
     14,
     18
   ],
-  "theme": "wasteland_v2",
+  "theme": { "light": "shelter_v2_sage", "dark": "shelter_v2_sage" },
   "font": "IBM Plex Mono",
   "font_size": 14,
   "ui_font": "Share Tech Mono",
