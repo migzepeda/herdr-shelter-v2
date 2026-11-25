@@ -1,0 +1,1 @@
+MIT License. Same as the repository root LICENSE. The theme colors are the Shelter v2 Sage palette; no third-party art or fonts are included.

@@ -9,6 +9,12 @@ advice; for persistent eye strain see an optometrist).
 
 ![Shelter v2](preview.png)
 
+The three themes, drawn from the same layout (`previews/`):
+
+| Green (default) | Sage | Amber |
+|---|---|---|
+| ![Green](previews/shelter_v2-green.png) | ![Sage](previews/shelter_v2-sage.png) | ![Amber](previews/shelter_v2-amber.png) |
+
 Unofficial, personal project. Not affiliated with or endorsed by Herdr or any game
 publisher. Tested on Windows only. AI Assisted.
 
@@ -20,6 +26,8 @@ publisher. Tested on Windows only. AI Assisted.
 | `layouts/shelter_v2.svg` | the picture Herdr's settings screen shows for the layout |
 | `mods/shelter_v2/` | the mod that draws every screen, with its icons and fonts |
 | `themes/shelter_v2_sage.json`, `shelter_v2_amber.json`, `shelter_v2.json` | the three palettes (`shelter_v2`, the original green, is the layout's default) |
+| `previews/` | drawings of the Green, Sage and Amber looks (`node tools/variant-previews.js` redraws them) |
+| `app-themes/` | matching Sage themes for VS Code, Obsidian, Chrome and Visual Studio 2026, see its README |
 | `keys.json` | the `layout:shelter_v2` keys section to merge into yours |
 | `RECIPE.md` | the full brief: what you see, behavior, how it is built, what to watch for |
 

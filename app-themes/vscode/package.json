@@ -1,0 +1,27 @@
+{
+  "name": "shelter-v2-sage-theme",
+  "displayName": "Shelter v2 Sage",
+  "description": "Calm sage-green dark theme for long hours and low light, matching the Herdr shelter_v2 layout (Sage theme). Text about 10:1 contrast, desaturated colors. AI Assisted.",
+  "version": "1.0.1",
+  "publisher": "local",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/migzepeda/herdr-shelter-v2"
+  },
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Shelter v2 Sage",
+        "uiTheme": "vs-dark",
+        "path": "./themes/shelter-v2-sage-color-theme.json"
+      }
+    ]
+  }
+}
