@@ -27,7 +27,7 @@ publisher. Tested on Windows only. AI Assisted.
 | `mods/shelter_v2/` | the mod that draws every screen, with its icons and fonts |
 | `themes/shelter_v2_sage.json`, `shelter_v2_amber.json`, `shelter_v2.json` | the three palettes (`shelter_v2`, the original green, is the layout's default) |
 | `previews/` | drawings of the Green, Sage and Amber looks (`node tools/variant-previews.js` redraws them) |
-| `app-themes/` | matching Sage themes for VS Code, Obsidian, Chrome and Visual Studio 2026, see its README |
+| `app-themes/` | matching Green, Sage and Amber themes for VS Code, Obsidian, Chrome and Visual Studio 2026, see its README |
 | `keys.json` | the `layout:shelter_v2` keys section to merge into yours |
 | `RECIPE.md` | the full brief: what you see, behavior, how it is built, what to watch for |
 

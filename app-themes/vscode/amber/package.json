@@ -1,0 +1,27 @@
+{
+  "name": "shelter-v2-amber-theme",
+  "displayName": "Shelter v2 Amber",
+  "description": "Warm amber dark theme for late hours and dark rooms, matching the Herdr shelter_v2 layout (Amber theme). Text about 10:1 contrast. AI Assisted.",
+  "version": "1.0.0",
+  "publisher": "local",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/migzepeda/herdr-shelter-v2"
+  },
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Shelter v2 Amber",
+        "uiTheme": "vs-dark",
+        "path": "./themes/shelter-v2-amber-color-theme.json"
+      }
+    ]
+  }
+}

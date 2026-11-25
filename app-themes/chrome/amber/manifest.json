@@ -1,0 +1,147 @@
+{
+  "manifest_version": 3,
+  "name": "Shelter v2 Amber",
+  "version": "1.0.0",
+  "description": "Warm amber theme for late hours and dark rooms, matching the Herdr shelter_v2 layout (Amber theme). AI Assisted.",
+  "theme": {
+    "images": {
+      "theme_frame": "images/theme_frame.png",
+      "theme_frame_inactive": "images/theme_frame_inactive.png",
+      "theme_ntp_background": "images/theme_ntp_background.png"
+    },
+    "colors": {
+      "frame": [
+        15,
+        12,
+        8
+      ],
+      "frame_inactive": [
+        11,
+        9,
+        6
+      ],
+      "frame_incognito": [
+        15,
+        12,
+        8
+      ],
+      "frame_incognito_inactive": [
+        11,
+        9,
+        6
+      ],
+      "background_tab": [
+        24,
+        19,
+        16
+      ],
+      "background_tab_inactive": [
+        24,
+        19,
+        16
+      ],
+      "toolbar": [
+        29,
+        23,
+        18
+      ],
+      "toolbar_text": [
+        217,
+        185,
+        138
+      ],
+      "toolbar_button_icon": [
+        224,
+        164,
+        88
+      ],
+      "tab_text": [
+        224,
+        164,
+        88
+      ],
+      "tab_background_text": [
+        154,
+        128,
+        99
+      ],
+      "tab_background_text_inactive": [
+        154,
+        128,
+        99
+      ],
+      "bookmark_text": [
+        168,
+        137,
+        106
+      ],
+      "omnibox_background": [
+        15,
+        12,
+        8
+      ],
+      "omnibox_text": [
+        217,
+        185,
+        138
+      ],
+      "button_background": [
+        39,
+        31,
+        23,
+        1
+      ],
+      "ntp_background": [
+        20,
+        16,
+        11
+      ],
+      "ntp_text": [
+        217,
+        185,
+        138
+      ],
+      "ntp_link": [
+        224,
+        164,
+        88
+      ],
+      "ntp_header": [
+        74,
+        59,
+        43
+      ],
+      "ntp_section": [
+        29,
+        23,
+        18
+      ],
+      "ntp_section_text": [
+        217,
+        185,
+        138
+      ],
+      "ntp_section_link": [
+        224,
+        164,
+        88
+      ]
+    },
+    "tints": {
+      "buttons": [
+        0.1,
+        0.4,
+        0.72
+      ],
+      "frame_inactive": [
+        -1,
+        -1,
+        0.4
+      ]
+    },
+    "properties": {
+      "ntp_background_alignment": "center",
+      "ntp_background_repeat": "no-repeat"
+    }
+  }
+}

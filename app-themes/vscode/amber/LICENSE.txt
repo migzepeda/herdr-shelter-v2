@@ -1,0 +1,1 @@
+MIT License. Same as the repository root LICENSE. The theme colors come from this repository's Herdr palettes; no third-party art or fonts are included.

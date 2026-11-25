@@ -1,0 +1,27 @@
+{
+  "name": "shelter-v2-green-theme",
+  "displayName": "Shelter v2 Green",
+  "description": "Green-phosphor dark theme matching the Herdr shelter_v2 layout (Green theme, the original look). AI Assisted.",
+  "version": "1.0.0",
+  "publisher": "local",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/migzepeda/herdr-shelter-v2"
+  },
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Shelter v2 Green",
+        "uiTheme": "vs-dark",
+        "path": "./themes/shelter-v2-green-color-theme.json"
+      }
+    ]
+  }
+}
